@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int ch;
+
+    printf("Enter a lowercase letter: ");
+    ch = getchar();
+
+    printf("The uppercase letter: ");
+
+    (ch >= 'a' && ch <= 'z') ? putchar(ch + 'A' - 'a') : printf("Invalid character");
+
+    return 0;
+}
