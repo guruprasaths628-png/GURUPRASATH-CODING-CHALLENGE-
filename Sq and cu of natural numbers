@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int a = 0, b = 0;
+    int i, n;
+
+    printf("enter n: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++)
+    {
+        a = a + i * i;
+        b = b + i * i * i;
+    }
+
+    printf("sq of natural numbers = %d", a);
+    printf("\ncube of natural numbers = %d", b);
+
+    return 0;
+}
