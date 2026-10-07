@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void calculate(int *m1, int *m2, int *m3, int *total, float *average)
+{
+    *total = *m1 + *m2 + *m3;
+    *average = *total /3;
+}
+
+int main()
+{
+    int m1, m2, m3, total;
+    float average;
+
+    printf("Enter three marks: ");
+    scanf("%d %d %d", &m1, &m2, &m3);
+
+    calculate(&m1, &m2, &m3, &total, &average);
+
+    printf("Total = %d\n", total);
+    printf("Average = %f\n", average);
+
+    return 0;
+}
