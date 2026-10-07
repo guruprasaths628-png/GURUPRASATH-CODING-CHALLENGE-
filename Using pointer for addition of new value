@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    float balance;
+
+    scanf("%f", &balance);
+
+    float *p = &balance;
+
+    *p = *p + 1500;
+
+    printf("Updated Balance = %.2f\n", balance);
+
+    return 0;
+}
