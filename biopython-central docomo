@@ -1,0 +1,15 @@
+from Bio import SeqIO
+#extracting cds.fna file from stkll sub folder of project folder
+records=SeqIO.parse("barc/cds.fna","fasta")
+first_record=next(records)
+#printing id and sequence of genes
+print(first_record.id)
+print(first_record.seq,"\n")
+dna=first_record.seq
+#dna was transcribed into rna
+print("DNA to RNA was done:")
+rna=dna.transcribe()
+print(rna)
+protein=rna.translate()
+print("\nprotein sequence :")
+print(protein)
