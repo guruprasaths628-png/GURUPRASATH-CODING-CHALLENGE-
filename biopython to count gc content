@@ -1,0 +1,6 @@
+dna=input("enter gc dna sequence:")
+g=dna.count('G')
+g=dna.count('C')
+l=len(dna)
+gccon=(g+_c)/l*100
+print("gc content= ",gccon,"%")
